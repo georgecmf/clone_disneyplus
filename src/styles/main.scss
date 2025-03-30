@@ -8,6 +8,8 @@
 @use 'header';
 @use 'sass:color';
 
+
+
 @font-face {
     font-family: Avenir;
     src: url(../../assets/fonts/Avenir-Regular.woff2);
@@ -114,7 +116,7 @@ body {
     border: 1px solid variaveis.$corDeFundoBotaoPrimario;
 
     &:hover {
-        background-color:  color.scale(variaveis.$corDeFundoBotaoPrimario, $lightness: 3%);
+        background-color:  color.adjust(variaveis.$corDeFundoBotaoPrimario, $lightness: 3%);
     }
 
 
@@ -123,7 +125,7 @@ body {
         border-color: variaveis.$corDeFundoBotaosecundario;
     
         &:hover {
-            background-color: color.scale(variaveis.$corDeFundoBotaosecundario, $lightness: 3%);
+            background-color: color.adjust(variaveis.$corDeFundoBotaosecundario, $lightness: 3%);
         }
     }
 

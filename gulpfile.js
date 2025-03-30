@@ -11,7 +11,7 @@ function scripts() {
 
 function styles() {
     return gulp.src('./src/styles/main.scss')  
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest('./dist/css'));
 }
 
