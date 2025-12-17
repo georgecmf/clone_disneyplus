@@ -14,7 +14,7 @@ Projeto de estudo inspirado na interface do Disney+, desenvolvido com foco em la
 - `dist/` → versão final do site pronta para deploy
 
 ## 🌐 Projeto online
-👉 clone-disneyplus-oixq.vercel.app
+👉 https://clone-disneyplus-oixq.vercel.app
 
 ## 📌 Observações
 Projeto criado apenas para fins educacionais e prática de front-end.
