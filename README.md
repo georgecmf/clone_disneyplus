@@ -2,19 +2,19 @@
 
 Projeto de estudo inspirado na interface do Disney+, desenvolvido com foco em layout, responsividade e organização de código front-end.
 
-## 🔧 Tecnologias utilizadas
+## Tecnologias utilizadas
 - HTML5
 - CSS / SCSS
 - JavaScript
 - Gulp (automação e build)
 - Node.js
 
-## 📁 Estrutura do projeto
+## Estrutura do projeto
 - `src/` → código fonte (styles, scripts, imagens)
 - `dist/` → versão final do site pronta para deploy
 
 ## 🌐 Projeto online
-👉 https://clone-disneyplus-oixq.vercel.app
+ [Acessar o site](https://clone-disneyplus-oixq.vercel.app)
 
-## 📌 Observações
+##  Observações
 Projeto criado apenas para fins educacionais e prática de front-end.
