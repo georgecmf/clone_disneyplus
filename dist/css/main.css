@@ -66,6 +66,12 @@
   padding: 5.6vw;
   min-height: 50vw;
 }
+@media (max-width: 768px) {
+  .shows {
+    min-height: auto;
+    padding-bottom: 0;
+  }
+}
 .shows__list {
   margin-top: 44px;
   display: none;
@@ -87,24 +93,32 @@
 .shows__tabs {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  height: 56px;
 }
 @media (max-width: 768px) {
   .shows__tabs {
+    justify-content: flex-start;
     white-space: nowrap;
-    overflow-x: scroll;
-    padding-left: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 20px;
   }
+}
+.shows__tabs::-webkit-scrollbar {
+  display: none;
 }
 .shows__tabs__button {
   color: #f9f9f9;
   font-size: 20px;
   border: none;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   background: none;
   text-transform: uppercase;
   margin: 0 1vw;
   cursor: pointer;
   border-bottom: 5px solid transparent;
+  flex-shrink: 0;
 }
 .shows__tabs__button--is-active {
   border-color: #f9f9f9;
@@ -117,45 +131,58 @@
 
 .plans {
   padding: 5.6vw;
+  /* LISTA */
+  /* ITEM */
 }
 .plans h2 {
   text-align: center;
   margin-top: 80px;
 }
 .plans__list {
+  list-style: none;
+  margin: 50px auto 0;
+  padding: 0;
   display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
+  justify-content: center;
+  gap: 32px;
 }
 @media (max-width: 768px) {
   .plans__list {
-    display: block;
-    padding-left: 14px;
+    flex-direction: column;
+    align-items: center;
   }
 }
-.plans__list .button {
-  margin-top: 24px;
-}
 .plans__list__item {
-  text-align: center;
   max-width: 300px;
   width: 100%;
-  margin-top: 14px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 16px;
 }
-.plans__list__item:nth-last-child(2) {
-  background-image: url(../images/fundo_combo_plus.png);
+.plans__list__item:nth-child(2) {
+  background-image: url("../images/fundo_combo_plus.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: top center;
 }
-.plans__list img {
+.plans img {
   height: 83px;
-}
-.plans__list strong {
   display: block;
-  margin-top: 24px;
+  margin-bottom: 16px;
 }
-
-p {
+.plans strong {
+  display: block;
+  margin: 16px 0;
+}
+.plans .button {
+  margin-top: 24px;
+  width: 100%;
+  max-width: 260px;
+}
+.plans p {
   text-align: center;
   margin-top: 24px;
 }
