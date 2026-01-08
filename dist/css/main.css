@@ -211,11 +211,16 @@
   margin-top: 20px;
   margin-bottom: 24px;
 }
+.available-devices__list__item ul {
+  padding: 0;
+  margin: 0;
+}
 .available-devices__list__item li {
   list-style-type: none;
 }
 .available-devices__list__item img {
   max-width: 100%;
+  height: auto;
 }
 
 .faq {
